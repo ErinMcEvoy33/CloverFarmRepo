@@ -1,0 +1,304 @@
+/*Erin McEvoy's Meet the Animals CSS HDSDEV_SEP25 x25112872*/
+/*Makes all images scale correctly on the screen in use*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*Sets background colour of webpage*/
+body{
+  background-color:#CDE8B5;
+}
+/*Styles the Nav bar*/
+.custom-navbar{
+  background: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);	
+}
+/*Sets the logo height*/
+.nav-logo {
+  height: 100px;
+  width: auto;
+}
+/*Styles the nav bar links*/
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  color: #444 !important;/*special animation*/
+  transition: 0.25s ease;
+}
+/*Hover effect*/
+.navbar-nav .nav-link:hover {
+  color: #00FF00 !important;/*makes it stay even if bootstrap overides*/
+  transform: translateY(-2px);/*brings text up 2 pixels*/
+}
+/*Adds spacing between title container*/
+.titlecontainer{
+	margin-bottom:40px;
+}
+/*styles main page title*/
+.title{
+	justify-content:center;
+	text-align:center;
+	font-family: "Georgia", "Times New Roman", serif; 
+	font-size: 70px;
+	color: #3f2e1e;
+	margin: 60px 0 25px;
+	letter-spacing: 1px;
+	position: relative;
+}
+/*Styles the title underline*/
+.title::after {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 6px;
+  background: #b58b4c; 
+  margin: 12px auto 0;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+/*styles intro and winner section side by side using flex*/
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items:stretch;
+  gap: 30px;          /* spacing between containers */
+  margin-top:40px;
+  padding:20px;
+}
+/*styles the farm visit images*/
+.farm-visit{
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 4px solid #C7A878;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+/*horizontal images with a scroll if needed on smaller screens*/
+.farmvisit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;   
+  align-items: center;
+  gap: 20px;                 
+  flex-wrap: nowrap;     
+  overflow-x: auto;      
+  margin-bottom: 10px; 
+  padding-bottom: 10px;
+}
+/*Main intro box styling*/
+.intro{
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFF9F2;  
+  border: 2px solid #C7A878; 
+  border-radius: 12px;        
+  padding: 25px 35px;        
+  margin:0;
+  line-height: 1.6;          
+  font-size: 18px;            
+  color: black;  
+  flex:3;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08); 
+	
+}
+/*Winner box styling*/
+.winner{
+  background-color: #FFF9F2;
+  border: 2px solid #D1B68C;
+  border-radius: 12px;
+  padding: 20px 30px;
+  max-width: 400px;
+  color: #3f2e1e;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  flex:1;  
+  text-align:center;
+  
+}
+/*winner image styling*/
+.win-animal{
+  border-radius: 12px;
+  border: 4px solid #D1B68C;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width:70%;
+  margin-bottom:20px;
+}
+/*flashing winner textbox*/
+.flash-name {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 2px solid #3f2e1e;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #3f2e1e;
+  text-align: center;
+  animation: flash 1s infinite;
+  margin-bottom:10px;
+}
+/*the flashing colours*/
+@keyframes flash {
+  0%, 100% {
+    background-color: #2F5E2E;
+  }
+  50% {
+    background-color:#CDE8B5; /* brighter flash color */
+  }
+}
+/*animal card styling*/
+.animal-grid{
+	display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px, 1fr)); /* 3 across */
+    gap: 30px;
+    padding: 20px; 
+	justify-items:center;
+
+}
+/*animal profile pic styling*/
+.animal-card img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover; 
+  border-radius: 12px;
+  border: 4px solid #D1B68C;
+  margin-bottom: 15px;
+}
+/*style of the profiles*/
+.animal-card{
+	background:  #FFF9F2;           
+    border: 4px solid #D1B68C;     
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.20);
+	display:flex;
+	flex-direction:column;
+	min-height:700px;
+}
+/*profile text style*/
+.animal-card p{
+	flex:1;
+	text-align:left;
+	line-height:1.5;
+	
+}
+/*vote button style*/
+button{
+	width:50%;
+	margin:20px auto 0;
+	padding:8px;
+	background-color:#434D24;
+	color:white;
+	border:none;
+	border-radius:8px;
+	cursor:pointer;	
+}
+/*card title style*/
+.animal-card h3{
+	font-family:'Roboto', sans-serif;
+	margin-bottom:20px;
+	
+}
+p{
+	text-align:left;
+}
+/*headings*/
+h2{
+    font-family:"Georgia", "Times New Roman", serif;
+	text-align:center;
+	padding:20px;
+}
+/*social media icons centered*/
+.social-icons-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+/*Icons in the footer*/
+.social-icons a img {
+  width: 35px;       
+  height: 35px;
+  margin: 0 12px;     
+  transition: 0.3s;
+}
+/*hover over icon*/
+.social-icons a img:hover {
+  opacity: 0.7;
+}
+/*footer text style*/
+footer.bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #444;
+}
+/*full width white at bottom*/
+.white-band {
+  width: 100%;
+  background: white;      
+  padding: 30px 0;        
+  margin-top: 0;
+}
+/* Responsive Design using media queries, tablets and smaller*/
+@media (max-width:992px){
+.title {
+    font-size:48px;
+    margin:40px 0 20px;
+}
+.intro-container{
+    flex-direction:column;
+    align-items:stretch;
+}
+.intro {
+    font-size:16px;
+}
+.winner{
+    max-width:100%;
+    margin-top:20px;
+}
+.animal-card{
+    min-height:auto;
+}
+/* For mobile phones */
+@media(max-width:576px){
+ body{
+    padding:0 10px;
+}
+.nav-logo{
+    height:70px;
+}
+.title{
+    font-size:36px;
+}
+h2{
+    font-size:20px;
+    padding:10px;
+}
+.intro-container{
+    padding:10px;
+    gap:15px;
+}
+.farmvisit{
+    gap:10px;
+}
+.farm-visit{
+    width:180px;
+    height:180px;
+}
+.animal-grid{
+    grid-template-columns:1fr; 
+    padding:10px;
+    gap:20px;
+}
+.animal-car{
+    padding:12px;
+}
+button{
+    width:70%;
+    font-size:14px;
+}
+.white-band{
+    padding:20px 0;
+}
+}

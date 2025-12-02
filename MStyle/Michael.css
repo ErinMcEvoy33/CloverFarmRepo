@@ -1,0 +1,183 @@
+.Grid{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:1em;
+}
+.Events{
+  border: 2px solid #CAC797;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #FFF9F2;
+  border-radius: 8px;
+
+}
+.quiz {
+  background-color: #fff;
+  border: 2px solid #CAC797;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 300px;
+  margin: 30px auto; /* centers the box */
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid #e5ee5; /* subtle divider line */
+  margin-top: 30px;
+  background-color: #fff;       /* optional: keeps footer clean */
+  width:100%;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;            /* space between icons */
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1); /* subtle zoom on hover */
+}
+
+body{
+  background-color: #CDE8B5;
+}
+#name,
+#email {
+  width: 100%;
+  box-sizing: border-box; /* ensures padding doesn't exceed width */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.col-md-6{
+  background-color:#fff;
+}
+#bookingform{
+  background-color:#fff;
+}
+.titlecontainer{
+  margin-bottom:40px;
+}
+.title{
+  justify-content:center;
+  text-align:center;
+  font-family: "Georgia", "Times New Roman", serif; 
+  font-size: 70px;
+  color: #3f2e1e;
+  margin: 60px 0 25px;
+  letter-spacing: 1px;
+  position: relative;
+}
+.title::after {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 6px;
+  background: #b58b4c; 
+  margin: 12px auto 0;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+
+
+.button input[type="submit"] {
+    width: 200px;
+    margin: 15px auto 0;
+    display: block;
+    border-radius: 12px;
+}
+.quiz{
+  position:center;
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+  color: black; /* White text */
+}
+.custom-navbar{
+  background: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);  
+}
+.nav-logo {
+  height: 100px;
+  width: auto;
+}
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  color: #444 !important;
+  transition: 0.25s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #00FF00 !important;/*makes it stay even if bootstrap overides*/
+  transform: translateY(-2px);/*brings text up 2 pixels*/
+}
+
+
+
+.image{
+	justify-content:center;
+}
+
+.formheader{
+	margin-right:-1500px;
+}
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  border: 5px solid seagreen;
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.group{
+  display:flex;       /* let all cards sit side-by-side */
+}
+
+.card{
+  flex: 0 0 800px;     
+  height: 500px;    
+  padding: 0;          
+  scroll-snap-align: start;
+}
+
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fill the entire card */
+  display: block;
+}
+
+.input-error {
+  border: 2px solid red;
+  background-color: #fff0f0;
+}
+
+.group{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:1em;
+  animation:spin 34s infinite linear;
+}
+@keyframes spin{
+  from{ translate: 0; }
+  to {translate: -100%;}
+}
