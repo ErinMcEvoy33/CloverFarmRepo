@@ -1,177 +1,179 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title> Booking Page </title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-		<link rel = "stylesheet" href = "../MStyle/Michael.css">
-		<script src = "../MScript/Michael.js"></script>
-	</head>
-	<body>
-	<nav class="navbar navbar-expand-lg custom-navbar navbar-light bg-light mb-4">
-		<div class="container">
-				<a class="navbar-brand" href="../index.html"> 
-					<img src="../Mimages/logo.jpg" alt="Logo" class="nav-logo">
-				</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-					</button>
-						<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-							<ul class="navbar-nav">
-								<li class="nav-item">
-									<a class="nav-link active" href="../index.html">Home</a>
-								</li>
-				<li class="nav-item">
-					<a class="nav-link" href="../Animals/animals.html"> Meet the Animals</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="../cafe/cafe.html">Café</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="../Booking/booking.html">Booking Page</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="../Volunteer/volunteer.html">Volunteer Page</a>
-				</li>
-						</ul>
-						</div>
-				</div>
-		</nav>
-<!-- containers for events -->
-		<div class = "container mt-4">
-		<div class = "row justify-content-center">
-			<div class = "col-md-8">
-			<div class="titlecontainer">
-				<h1 class="title">Booking Page</h1>
-			</div>
-		</div>
-	</div>
+      <head>
+            <title> Booking Page </title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <link rel = "stylesheet" href = "Michael.css">
+            <script src = "Michael.js"></script>
+      </head>
+      <body>
+      <nav class="navbar navbar-expand-lg custom-navbar navbar-light bg-white mb-4">
+            <div class="container">
+                        <a class="navbar-brand" href="animals.html">
+                              <img src="images/logo.jpg" alt="Logo" class="nav-logo">
+                        </a>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                              </button>
+                                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                                          <ul class="navbar-nav">
+                                                <li class="nav-item">
+                                                      <a class="nav-link active" href="Index.html">Home</a>
+                                                </li>
+                        <li class="nav-item">
+                              <a class="nav-link" href="animals.html"> Meet the animals</a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link" href="Cafe.html">Cafe</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Booking Page</a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link" href="Cafe.html">Volunteer Page</a>
+                        </li>
+                                    </ul>
+                                    </div>
+                        </div>
+            </nav>
 
-		<div class = "container mt-5">
-			 <div class="row justify-content-center">
-			 		  <div class="col-md-6">
-						<form id = "bookingform" action="submit">
-							<h3 class = "text-center my-4"> Get in Touch </h3>
-							<h6 class = "text-center my-4"> Please select an event and a member of our team will be in touch </h6>
-							<div class = "mb-3">
-							    <label for="name">Name:</label><br>
-							    <input type="text" id="name" name="name" required>
-							</div>
-						    <div class = "mb-3">
-							    <label for="email">Email:</label><br>
-							    <input type="email" id="email" name="email" required>
-							</div>
-							<div class = "mb-3">
-						    <label for="Event">Event:</label>
-								  <select id="Event" name="Event" required>
-								    <option value="Cafe">Cafe</option>
-								    <option value="Christmas">Christmas Event</option>
-								    <option value="Spa">Spa Break</option>
-								    <option value="Halloween">Halloween Event</option>
-								  </select>
-							</div>
-							<div class = "button mb-3">
-								<input type= submit alt = "submit" value="Submit">
-							</div>
-						  </form>
-						</div>
-					</div>
-			</div>
+            <div class = "container mt-4">
+            <div class = "row justify-content-center">
+                  <div class = "col-md-8">
+                  <div class="titlecontainer">
+                        <h1 class="title">Booking Page</h1>
+                  </div>
+            </div>
+      </div>
 
-	<h3 class="text-center my-4">Learn more about our events below</h3>
-		<div class = "Grid">
-	<div class = "Events">
-	<h2 class = "text-center my-4">Spa Break</h2>
-		<p>Escape to the tranquil countryside with our signature Clover Farm Spa Break, a two-night retreat designed to melt away stress and restore your natural glow. Nestled among rolling green hills and whispering woodlands, our spa experience blends luxury, nature, and personalized care.</p>
-			<ol class="text-center my-4">
-  				<li>Standard Package – €199</li>
-  				<li>Couples Retreat – €379</li>
-  				<li>Luxury Glow Package – €249</li>
-  				<li>Day Spa Pass – €89</li>
-			</ol>
-	</div>
-	<div class = "Events">
-	<h2 class = "text-center my-4" >Christmas Event</h2>
-		<p>Join us at Clover Farm for a heartwarming Christmas Event that brings together cozy traditions, joyful entertainment, and seasonal delights. Whether you're coming with family, friends, or that special someone, this is your chance to make unforgettable holiday memories.</p>
-			<ol class="text-center my-4">
-  				<li>General Admission – €14.95</li>
-  				<li>Santa’s Workshop Pass – €24.95</li>
-  				<li>Family Bundle – €59.95</li>
-  				<li>Twilight Ticket – €9.95</li>
-  				<li>Infants under 2 – Free</li>
-			</ol>
-	</div>
-	<div class = "Events">
-	<h2 class = "text-center my-4">Halloween Event</h2>
-		<p>Clover Hollow Farm near Athenry transforms into a spooky wonderland each Halloween, hosting its annual Clover Hollow Halloween Festival from October 25th to 31st. Families and thrill-seekers alike flock to the farm for its eerie Pumpkin Hollow Trail, where hundreds of carved pumpkins light the way through a misty forest path. The Haunted Hayride takes guests on a chilling journey through the Forgotten Fields, where animatronic creatures and ghostly figures lurk in the shadows. Children can get creative in the Witch’s Kitchen Workshop, decorating cupcakes and brewing edible potions, while the Barnyard Boogie offers a glow-in-the-dark costume dance party with live music and fog machines. Adventurers can test their nerves in the Scarecrow Maze, a twisty corn labyrinth patrolled by mischievous scarecrows. Tickets range from €15 for general admission to €25 for the VIP Spook Pass, which includes priority hayride access, a free pumpkin, and a hot cider voucher. With food trucks, a Monster Market, and even costumed goats in the petting zoo, Clover Hollow Farm promises a hauntingly wholesome experience for all ages.</p>
-			<ol class="text-center my-4">
-  				<li>General Admission – €14.95</li>
-  				<li>Santa’s Workshop Pass – €24.95</li>
-  				<li>Family Bundle – €59.95</li>
-  				<li>Twilight Ticket – €9.95</li>
-  				<li>Infants under 2 – Free</li>
-			</ol>
-		</div>
-	<div class = "Events">
-	<h2 class = "text-center my-4">Cafe Reservation</h2>
-		<p>Treat yourself to a cozy escape at the Clover Farm Café, where rustic charm meets seasonal flavors. Whether you're planning a quiet coffee with a friend or a festive gathering after exploring our Christmas market, our café offers the perfect setting to relax and reconnect.</p>
-		<ol class="text-center my-4">
-  			<li>Table for Two – €29.95</li>
-  			<li>Family Brunch – €59.95</li>
-  			<li>Winter Special – €19.95</li>
-		</ol>
-	</div>
+            <div class = "container mt-5">
+                   <div class="row justify-content-center">
+                                <div class="col-md-6">
+                                    <form id = "bookingform" action="submit">
+                                          <h3 class = "text-center my-4"> Get in Touch </h3>
+                                          <h6 class = "text-center my-4"> Please select an event and a member of our team will be in touch </h6>
+                                          <div class = "mb-3">
+                                              <label for="name">Name:</label><br>
+                                              <input type="text" id="name" name="name" required>
+                                          </div>
+                                        <div class = "mb-3">
+                                              <label for="email">Email:</label><br>
+                                              <input type="email" id="email" name="email" required>
+                                          </div>
+                                          <div class = "mb-3">
+                                        <label for="Event">Event:</label>
+                                                  <select id="Event" name="Event" required>
+                                                    <option value="Cafe">Cafe</option>
+                                                    <option value="Christmas">Christmas Event</option>
+                                                    <option value="Spa">Spa Break</option>
+                                                    <option value="Halloween">Halloween Event</option>
+                                                  </select>
+                                          </div>
+                                          <div class = "button mb-3">
+                                                <input type= submit alt = "submit" value="Submit">
+                                          </div>
+                                      </form>
+                                    </div>
+                              </div>
+                  </div>
+
+      <h3 class="text-center my-4">Learn more about our events below</h3>
+            <div class = "Grid">
+      <div class = "Events">
+      <h2 class = "text-center my-4">Spa Break</h2>
+            <p>Escape to the tranquil countryside with our signature Clover Farm Spa Break, a two-night retreat designed to melt away stress and restore your natural glow. Nestled among rolling green hills and whispering woodlands, our spa experience blends luxury, nature, and personalized care.</p>
+                  <ol class="text-center my-4">
+                        <li>Standard Package – €199</li>
+                        <li>Couples Retreat – €379</li>
+                        <li>Luxury Glow Package – €249</li>
+                        <li>Day Spa Pass – €89</li>
+                  </ol>
+      </div>
+      <div class = "Events">
+      <h2 class = "text-center my-4" >Christmas Event</h2>
+            <p>Join us at Clover Farm for a heartwarming Christmas Event that brings together cozy traditions, joyful entertainment, and seasonal delights. Whether you're coming with family, friends, or that special someone, this is your chance to make unforgettable holiday memories.</p>
+                  <ol class="text-center my-4">
+                        <li>General Admission – €14.95</li>
+                        <li>Santa’s Workshop Pass – €24.95</li>
+                        <li>Family Bundle – €59.95</li>
+                        <li>Twilight Ticket – €9.95</li>
+                        <li>Infants under 2 – Free</li>
+                  </ol>
+      </div>
+      <div class = "Events">
+      <h2 class = "text-center my-4">Halloween Event</h2>
+            <p>Clover Hollow Farm near Athenry transforms into a spooky wonderland each Halloween, hosting its annual Clover Hollow Halloween Festival from October 25th to 31st. Families and thrill-seekers alike flock to the farm for its eerie Pumpkin Hollow Trail, where hundreds of carved pumpkins light the way through a misty forest path. The Haunted Hayride takes guests on a chilling journey through the Forgotten Fields, where animatronic creatures and ghostly figures lurk in the shadows. Children can get creative in the Witch’s Kitchen Workshop, decorating cupcakes and brewing edible potions, while the Barnyard Boogie offers a glow-in-the-dark costume dance party with live music and fog machines. Adventurers can test their nerves in the Scarecrow Maze, a twisty corn labyrinth patrolled by mischievous scarecrows. Tickets range from €15 for general admission to €25 for the VIP Spook Pass, which includes priority hayride access, a free pumpkin, and a hot cider voucher. With food trucks, a Monster Market, and even costumed goats in the petting zoo, Clover Hollow Farm promises a hauntingly wholesome experience for all ages.</p>
+                  <ol class="text-center my-4">
+                        <li>General Admission – €14.95</li>
+                        <li>Santa’s Workshop Pass – €24.95</li>
+                        <li>Family Bundle – €59.95</li>
+                        <li>Twilight Ticket – €9.95</li>
+                        <li>Infants under 2 – Free</li>
+                  </ol>
+            </div>
+      <div class = "Events">
+      <h2 class = "text-center my-4">Cafe Reservation</h2>
+            <p>Treat yourself to a cozy escape at the Clover Farm Café, where rustic charm meets seasonal flavors. Whether you're planning a quiet coffee with a friend or a festive gathering after exploring our Christmas market, our café offers the perfect setting to relax and reconnect.</p>
+            <ol class="text-center my-4">
+                  <li>Table for Two – €29.95</li>
+                  <li>Family Brunch – €59.95</li>
+                  <li>Winter Special – €19.95</li>
+            </ol>
+      </div>
 </div>
-<h3 class="text-center my-4">Pictures from Past Events</h3>
+      <h3 class = "text-center my-4">Pictures from Past Events</h3>
+      <div class="carousel">
+            <div class = "group">
+                   <div class="col-12 col-sm-6 col-md-4 mb-3">
+                   <div class = "card">
+                        <img src="images/christmas.jpg">
+            </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 mb-3">
+            <div class = "card">
+                        <img src="images/spa.jpg">
+            </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 mb-3">
+                  <div class = "card">
+                        <img src="images/halloween.jpg">
+            </div>
+      </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+            <div class = "card">
+                        <img src="images/christmas.jpg" loading = "lazy" alt = "Event Photo">
+            </div>
+      </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+            <div class = "card">
+                        <img src="images/spa.jpg">
+            </div>
+      </div>
 
-<div class="carousel">
-  <div class="group">
-
-    <div class="card">
-      <img src="../Mimages/christmas.jpg">
-    </div>
-
-    <div class="card">
-      <img src="../Mimages/spa.jpg">
-    </div>
-
-    <div class="card">
-      <img src="../Mimages/halloween.jpg">
-    </div>
-
-    <div class="card">
-      <img src="../Mimages/christmas.jpg">
-    </div>
-
-    <div class="card">
-      <img src="../Mimages/spa.jpg">
-    </div>
-
-    <div class="card">
-      <img src="../Mimages/halloween.jpg">
-    </div>
-
+            <div class="col-12 col-sm-6 col-md-4 mb-3">
+            <div class = "card">
+                        <img src="images/halloween.jpg">
+            </div>
+      </div>
   </div>
 </div>
 </div>
-</div>
   <footer class="footer">
-			<div class="social-icons-container">
-			<div class="social-icons">
-				<a href="https://www.facebook.com/yourprofile" target="_blank">
-					<img src="../Mimages/facebook.png" alt="Facebook">
-				</a>
-				<a href="https://www.instagram.com/yourprofile" target="_blank">
-					<img src="../Mimages/instagram.png" alt="Instagram">
-				</a>
-				<a href="https://www.tiktok.com/@yourprofile" target="_blank">
-					<img src="../Mimages/tiktok.png" alt="TikTok">
-				</a>
-			</div>
-		</div>
-			<small>&copy; 2025 Clover Farm </small>
-		</footer>
-	</body>
+                  <div class="social-icons-container">
+                  <div class="social-icons">
+                        <a href="https://www.facebook.com/yourprofile" target="_blank">
+                              <img src="images/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/yourprofile" target="_blank">
+                              <img src="images/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.tiktok.com/@yourprofile" target="_blank">
+                              <img src="images/tiktok.png" alt="TikTok">
+                        </a>
+                  </div>
+            </div>
+                  <small>&copy; 2025 Clover Farm </small>
+            </footer>
+      </body>
 </html>
-
-
