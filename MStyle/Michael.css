@@ -10,18 +10,19 @@
   max-width: 800px;
   background-color: #FFF9F2;
   border-radius: 8px;
-  text-align:justify;
- 
+
 }
 .quiz {
   background-color: #fff;
+  border: 2px solid #CAC797;
+  border-radius: 8px;
   padding: 20px;
   max-width: 300px;
   margin: 30px auto; /* centers the box */
   text-align: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
- 
+
 .footer {
   text-align: center;
   padding: 20px 0;
@@ -30,30 +31,25 @@
   background-color: #fff;       /* optional: keeps footer clean */
   width:100%;
 }
-ol {
-  text-align: center;
-  list-style-position: inside;
-}
- 
- 
+
 .social-icons {
   display: flex;
   justify-content: center;
   gap: 20px;            /* space between icons */
   margin-top: 10px;
 }
- 
+
 .social-icons img {
   width: 40px;
   height: 40px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
- 
+
 .social-icons img:hover {
   transform: scale(1.1); /* subtle zoom on hover */
 }
- 
+
 body{
   background-color: #CDE8B5;
 }
@@ -94,8 +90,9 @@ body{
   border-radius: 3px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
- 
- 
+
+
+
 .button input[type="submit"] {
     width: 200px;
     margin: 15px auto 0;
@@ -105,7 +102,7 @@ body{
 .quiz{
   position:center;
 }
- 
+
 .navbar-custom .nav-link,
 .navbar-custom .navbar-brand {
   color: black; /* White text */
@@ -129,41 +126,50 @@ body{
   color: #00FF00 !important;/*makes it stay even if bootstrap overides*/
   transform: translateY(-2px);/*brings text up 2 pixels*/
 }
- 
- 
+
+
+
 .image{
 	justify-content:center;
 }
- 
+
 .formheader{
 	margin-right:-1500px;
 }
 .carousel {
-  display:flex;
-  overflow-x:auto;
-  border:5px solid seagreen;
-  width: 800px;       /* or 100% for full-width */
-  height: 500px;      /* increase height */
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  border: 5px solid seagreen;
+  width: 800px;
+  height: 500px;
   margin: 0 auto;
- 
 }
+
+.group{
+  display:flex;       /* let all cards sit side-by-side */
+}
+
 .card{
-  flex: 0 0 5em;
-  padding: 1em;
- 
+  flex: 0 0 800px;     
+  height: 500px;    
+  padding: 0;          
+  scroll-snap-align: start;
 }
+
+
 .card img {
-  max-width: 100%;   /* shrink with parent */
-  height: auto;      /* keep aspect ratio */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fill the entire card */
   display: block;
 }
- 
- 
+
 .input-error {
   border: 2px solid red;
   background-color: #fff0f0;
 }
- 
+
 .group{
   display:flex;
   align-items:center;
