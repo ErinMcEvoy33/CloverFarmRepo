@@ -11,7 +11,7 @@
   background-color: #FFF9F2;
   border-radius: 8px;
   text-align:justify;
-
+ 
 }
 .quiz {
   background-color: #fff;
@@ -21,7 +21,7 @@
   text-align: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-
+ 
 .footer {
   text-align: center;
   padding: 20px 0;
@@ -34,26 +34,26 @@ ol {
   text-align: center;
   list-style-position: inside;
 }
-
-
+ 
+ 
 .social-icons {
   display: flex;
   justify-content: center;
   gap: 20px;            /* space between icons */
   margin-top: 10px;
 }
-
+ 
 .social-icons img {
   width: 40px;
   height: 40px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-
+ 
 .social-icons img:hover {
   transform: scale(1.1); /* subtle zoom on hover */
 }
-
+ 
 body{
   background-color: #CDE8B5;
 }
@@ -77,7 +77,7 @@ body{
 .title{
   justify-content:center;
   text-align:center;
-  font-family: "Georgia", "Times New Roman", serif;
+  font-family: "Georgia", "Times New Roman", serif; 
   font-size: 70px;
   color: #3f2e1e;
   margin: 60px 0 25px;
@@ -89,14 +89,13 @@ body{
   display: block;
   width: 180px;
   height: 6px;
-  background: #b58b4c;
+  background: #b58b4c; 
   margin: 12px auto 0;
   border-radius: 3px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
-
-
-
+ 
+ 
 .button input[type="submit"] {
     width: 200px;
     margin: 15px auto 0;
@@ -106,7 +105,7 @@ body{
 .quiz{
   position:center;
 }
-
+ 
 .navbar-custom .nav-link,
 .navbar-custom .navbar-brand {
   color: black; /* White text */
@@ -127,18 +126,17 @@ body{
   transition: 0.25s ease;
 }
 .navbar-nav .nav-link:hover {
-  color: #064E3B !important;/*makes it stay even if bootstrap overides*/
+  color: #00FF00 !important;/*makes it stay even if bootstrap overides*/
   transform: translateY(-2px);/*brings text up 2 pixels*/
 }
-
-
-
+ 
+ 
 .image{
-      justify-content:center;
+	justify-content:center;
 }
-
+ 
 .formheader{
-      margin-right:-1500px;
+	margin-right:-1500px;
 }
 .carousel {
   display:flex;
@@ -147,25 +145,25 @@ body{
   width: 800px;       /* or 100% for full-width */
   height: 500px;      /* increase height */
   margin: 0 auto;
-
+ 
 }
 .card{
   flex: 0 0 5em;
   padding: 1em;
-
+ 
 }
 .card img {
   max-width: 100%;   /* shrink with parent */
   height: auto;      /* keep aspect ratio */
   display: block;
 }
-
-
+ 
+ 
 .input-error {
   border: 2px solid red;
   background-color: #fff0f0;
 }
-
+ 
 .group{
   display:flex;
   align-items:center;
