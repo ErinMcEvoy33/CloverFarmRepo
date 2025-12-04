@@ -49,7 +49,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #00FF00 !important;
+  color: #013220 !important;
   transform: translateY(-2px);
 }
 
@@ -581,4 +581,5 @@ form button,
         font-size: 12px;
         padding-bottom: 10px;
     }
+
 }
