@@ -28,7 +28,7 @@ body{
 }
 /*Hover effect*/
 .navbar-nav .nav-link:hover {
-  color: #00FF00 !important;/*makes it stay even if bootstrap overides*/
+  color: #013220 !important;/*makes it stay even if bootstrap overides*/
   transform: translateY(-2px);/*brings text up 2 pixels*/
 }
 /*Adds spacing between title container*/
@@ -301,4 +301,5 @@ button{
 .white-band{
     padding:20px 0;
 }
+
 }
