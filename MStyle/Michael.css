@@ -199,11 +199,12 @@ img {
   }
 }
 
-/* Ensure images scale properly */
+
 .volunteer-images img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
  
+
 
