@@ -49,7 +49,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #013220 !important;
+  color: #064E3B !important;
   transform: translateY(-2px);
 }
 
@@ -583,3 +583,4 @@ form button,
     }
 
 }
+
