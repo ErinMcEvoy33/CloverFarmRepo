@@ -138,13 +138,14 @@ body{
   animation: flash 1s infinite;
   margin-bottom:10px;
 }
-/*the flashing colours*/
 @keyframes flash {
   0%, 100% {
-    background-color: #2F5E2E;
+    background-color: #2F5E2E; /* dark green */
+    color: white;             /* text becomes white on dark */
   }
   50% {
-    background-color:#CDE8B5; /* brighter flash color */
+    background-color: #CDE8B5; /* bright flash color */
+    color: #3f2e1e;            /* dark text on light */
   }
 }
 /*animal card styling*/
@@ -303,3 +304,4 @@ button{
 }
 
 }
+
