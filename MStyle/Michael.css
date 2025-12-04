@@ -191,20 +191,7 @@ img {
   border-radius: 8px;   /* optional: rounded corners */
 
 }
-/* Volunteer image section: spacing when stacked on mobile */
-@media (max-width: 768px) {
-  .volunteer-images .col-md-4 {
-    margin-bottom: 25px;   /* space between stacked images */
-    text-align: center;    /* keeps alignment neat */
-  }
-}
 
 
-.volunteer-images img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
- 
 
 
