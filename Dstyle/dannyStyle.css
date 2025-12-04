@@ -8,25 +8,25 @@ body {
  
 /*title code shared with me by another team member who was responsible for styling the title*/
 .title{
-      justify-content:center;
-      text-align:center;
-      font-family: "Georgia", "Times New Roman", serif;
-      font-size: 45px;
-      color: #3f2e1e;
-      margin: 5px 0 25px;
-      letter-spacing: 1px;
-      position: relative;
+      justify-content:center !important;
+      text-align:center !important;
+      font-family: "Georgia", "Times New Roman", serif !important;
+      font-size: 45px !important;
+      color: #3f2e1e !important;
+      margin: 5px 0 25px !important;
+      letter-spacing: 1px !important;
+      position: relative !important;
 }
 
 .title::after {
-  content: "";
-  display: block;
-  width: 180px;
-  height: 6px;
-  background: #b58b4c;
-  margin: 12px auto 0;
-  border-radius: 3px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  content: "" !important;
+  display: block !important;
+  width: 180px !important;
+  height: 6px !important;
+  background: #b58b4c !important;
+  margin: 12px auto 0 !important;
+  border-radius: 3px !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15) !important;
 }
  
 /*NAVBAR code shared with me by another team member who was responsible for navbar styling*/
@@ -573,6 +573,7 @@ form button,
         padding-bottom: 10px;
     }
 }
+
 
 
 
